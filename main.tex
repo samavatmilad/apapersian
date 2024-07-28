@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm}
+\usepackage[backend=biber, style=apa]{biblatex}
+\usepackage{xepersian}
+\settextfont{XB Zar}
+\setdigitfont{XB Zar}
+\setlatintextfont{Times New Roman}
+\title{متن آزمایشی}
+\date{}
+\addbibresource{citation.bib}
+
+\begin{document}
+	من به
+	\cite{سر2015رابطه}
+	و به
+	\lr{\cite{kothari2016analysts}}
+	ارجاع داده‌ام.
+	
+	
+	
+	\printbibliography[keyword=ref2]
+	\begin{latin}
+		\printbibliography[keyword=ref1, heading=none]
+	\end{latin}
+\end{document}
